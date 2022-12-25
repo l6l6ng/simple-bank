@@ -19,7 +19,7 @@ jobs:
       postgres:
         # Docker Hub image
         image: postgres:12
-        container_name: postgres12
+        name: postgres12
         # Provide the password for postgres
         env:
           POSTGRES_USER: postgres

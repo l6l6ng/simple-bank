@@ -45,6 +45,9 @@ jobs:
           sudo mv migrate /usr/bin/
           which migrate
 
+      - name: createdb
+        run: make createdb
+
       - name: run migrations
         run: make migrateup
 
